@@ -7,6 +7,7 @@ import dev.siea.barista.commands.administration.KickCommand;
 import dev.siea.barista.commands.simple.CatbaseCommand;
 import dev.siea.barista.commands.simple.InfoCommand;
 import dev.siea.barista.games.counting.Counting;
+import dev.siea.barista.misc.JoinMessenger;
 import net.dv8tion.jda.api.sharding.ShardManager;
 import net.vitacraft.jmjda.JMBot;
 import net.vitacraft.jmjda.api.commands.PrimitiveCommandsManager;
@@ -26,6 +27,7 @@ public class Barista {
 
         ShardManager shardManager = bot.getShardManager();
         shardManager.addEventListener(new Counting());
+        shardManager.addEventListener(new JoinMessenger(shardManager));
     }
 
     public static void main(String[] args) {
