@@ -14,7 +14,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 public class Counting extends ListenerAdapter {
-    private final String CountingChannel = ConfigUtil.getConfig("config.yml", Filetype.YAML).getString("coutingChannel");
+    private final String CountingChannel = ConfigUtil.getConfig("config.yml", Filetype.YAML).getString("channels.counting");
     private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private ScheduledFuture<?> task;
 
