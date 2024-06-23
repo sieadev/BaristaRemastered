@@ -1,4 +1,4 @@
-package dev.siea.Barista.commands;
+package dev.siea.Barista.commands.simple;
 
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.channel.Channel;
@@ -28,7 +28,7 @@ public class CatbaseCommand implements PrimitiveCommand {
 
     @Override
     public void execute(MessageReceivedEvent messageReceivedEvent, String[] strings) {
-        DefaultCommandResponse response = new DefaultCommandResponse("The Catbase","The Catbase can be found at https://catbase.siea.dev");
+        CommandEmbedResponse response = new CommandEmbedResponse("The Catbase","The Catbase can be found at https://catbase.siea.dev");
         response.reply(messageReceivedEvent.getMessage());
     }
 

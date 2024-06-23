@@ -48,7 +48,6 @@ public class LetMeGoogleThatForYouCommand implements PrimitiveCommand {
                 .setTitle("Let me google that for you real quick")
                 .setThumbnail("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCWKGr_E3qM7B-B-_xwIZyF12n3sK3eM1q5w&s")
                 .setDescription(search.toString())
-                .setFooter("Suggested by " + originalMessage.getAuthor().getEffectiveName(), originalMessage.getAuthor().getEffectiveAvatarUrl())
                 .setColor(0xFF964F);
         MessageEmbed embed = embedBuilder.build();
         referencedMessage.replyEmbeds(embed).queue();

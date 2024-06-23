@@ -1,4 +1,4 @@
-package dev.siea.Barista.commands;
+package dev.siea.Barista.commands.simple;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
@@ -6,17 +6,17 @@ import net.dv8tion.jda.api.entities.MessageEmbed;
 
 import java.awt.*;
 
-public class DefaultCommandResponse {
+public class CommandEmbedResponse {
     private final EmbedBuilder embedBuilder;
 
-    public DefaultCommandResponse(String title, String description) {
+    public CommandEmbedResponse(String title, String description) {
         embedBuilder = new EmbedBuilder()
                 .setTitle(title)
                 .setDescription(description)
                 .setColor(Color.GREEN);
     }
 
-    public DefaultCommandResponse(String title, String description, Color color) {
+    public CommandEmbedResponse(String title, String description, Color color) {
          embedBuilder = new EmbedBuilder()
                 .setTitle(title)
                 .setDescription(description)
