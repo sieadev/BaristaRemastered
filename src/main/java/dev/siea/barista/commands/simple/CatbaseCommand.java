@@ -1,19 +1,19 @@
-package dev.siea.Barista.commands;
+package dev.siea.barista.commands.simple;
 
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.channel.Channel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.vitacraft.jmjda.api.commands.PrimitiveCommand;
 
-public class TryAndSeeCommand implements PrimitiveCommand {
+public class CatbaseCommand implements PrimitiveCommand {
     @Override
     public String getName() {
-        return "tas";
+        return "cats";
     }
 
     @Override
     public String getDescription() {
-        return "Try and see";
+        return "Sends the Catbase Link";
     }
 
     @Override
@@ -28,7 +28,8 @@ public class TryAndSeeCommand implements PrimitiveCommand {
 
     @Override
     public void execute(MessageReceivedEvent messageReceivedEvent, String[] strings) {
-        messageReceivedEvent.getMessage().reply("https://tryitands.ee/").queue();
+        CommandEmbedResponse response = new CommandEmbedResponse("The Catbase","The Catbase can be found at https://catbase.siea.dev");
+        response.reply(messageReceivedEvent.getMessage());
     }
 
     @Override

@@ -1,4 +1,4 @@
-package dev.siea.Barista.commands.administration;
+package dev.siea.barista.commands.administration;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.Permission;

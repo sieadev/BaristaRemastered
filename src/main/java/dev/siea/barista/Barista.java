@@ -1,4 +1,4 @@
-package dev.siea.Barista;
+package dev.siea.barista;
 
 import net.vitacraft.jmjda.JMBot;
 

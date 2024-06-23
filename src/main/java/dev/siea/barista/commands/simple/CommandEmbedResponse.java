@@ -1,4 +1,4 @@
-package dev.siea.Barista.commands.simple;
+package dev.siea.barista.commands.simple;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
