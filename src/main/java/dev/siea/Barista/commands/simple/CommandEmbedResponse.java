@@ -16,7 +16,7 @@ public class CommandEmbedResponse {
                 .setColor(Color.GREEN);
     }
 
-    public CommandEmbedResponse(String title, String description, Color color) {
+    public CommandEmbedResponse(String title, String description, int color) {
          embedBuilder = new EmbedBuilder()
                 .setTitle(title)
                 .setDescription(description)
