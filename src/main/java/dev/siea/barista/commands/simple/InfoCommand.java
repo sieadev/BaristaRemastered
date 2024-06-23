@@ -34,7 +34,8 @@ public class InfoCommand implements PrimitiveCommand {
     @Override
     public void execute(MessageReceivedEvent event, String[] args) {
         CommandEmbedResponse response = new CommandEmbedResponse("Barista - Info", "Version: " + config.getString("version"), 0xFF964F);
-        response.addField("Ownership" , "Created and maintained by **@sieadev** and other (**Contributors**)[https://github.com/sieadev/BaristaRemastered/graphs/contributors]");
+        response.addField("Ownership" , "Owned by **@sieadev**");
+        response.addField("Developers", "Created and maintained by **@sieadev** and other [**Contributors**](https://github.com/sieadev/BaristaRemastered/graphs/contributors)");
         response.reply(event.getMessage());
     }
 
